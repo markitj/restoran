@@ -1,0 +1,14 @@
+section {
+  padding: 5% 0;
+}
+
+.col {
+  padding-right: 5%;
+}
+
+@media (max-width: 800px) {
+  section .row {
+    display: flex;
+    flex-flow: column;
+  }
+}

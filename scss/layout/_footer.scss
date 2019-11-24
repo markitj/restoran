@@ -1,0 +1,25 @@
+footer {
+  background-color: $secondary-color;
+  padding: 2% 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .container .footer-col .row {
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    flex-flow: column;
+  }
+
+  .center {
+    align-items: center;
+  }
+}

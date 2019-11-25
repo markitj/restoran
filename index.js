@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
-    const loadingScreen = document.querySelector(".loader");
+    // const loadingScreen = document.querySelector(".loader");
 
     const sideNav = document.querySelector(".main-nav--side-nav");
     const btns = document.querySelectorAll(".button");
-    loadingScreen.classList.add("finish-loading");
+    // loadingScreen.classList.add("finish-loading");
     document.querySelector("body").style.overflow = "auto";
 
     btns.forEach(btn => {

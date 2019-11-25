@@ -1,5 +1,6 @@
 .side-by-side {
   display: flex;
+  width: 40%;
 }
 .img-space {
   padding: 0px 10px;
@@ -25,10 +26,6 @@
 
 @media (max-width: 1024px) {
   .side-by-side {
-    display: none;
-  }
-
-  .gallery {
     display: none;
   }
 

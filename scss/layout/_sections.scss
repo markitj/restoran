@@ -1,14 +1,29 @@
+// section {
+//   padding: 5% 0;
+// }
+
+// .col {
+//   padding-right: 5%;
+// }
+
+// @media (max-width: 800px) {
+//   section .row {
+//     display: flex;
+//     flex-flow: column;
+//   }
+// }
 section {
   padding: 5% 0;
+  overflow: hidden;
 }
 
-.col {
-  padding-right: 5%;
+.section__paragraph {
+  line-height: 1.5;
+  color: lighten($color: $secondary-color, $amount: 35%);
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   section .row {
     display: flex;
-    flex-flow: column;
   }
 }

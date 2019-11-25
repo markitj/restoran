@@ -2,8 +2,21 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
     const loadingScreen = document.querySelector(".loader");
 
+    const sideNav = document.querySelector(".main-nav--side-nav");
+    const btns = document.querySelectorAll(".button");
     loadingScreen.classList.add("finish-loading");
     document.querySelector("body").style.overflow = "auto";
+
+    btns.forEach(btn => {
+      btn.addEventListener("click", function() {
+        if (
+          btn.classList.contains("main-nav__open-nav") ||
+          btn.classList.contains("main-nav__close-nav")
+        ) {
+          sideNav.classList.toggle("toggle-menu");
+        }
+      });
+    });
   });
 });
 
@@ -105,7 +118,7 @@ let controller = new ScrollMagic.Controller();
     );
 
   let trigger3Scene = new ScrollMagic.Scene({
-    trigerElement: section,
+    triggerElement: section,
     duration: 700,
     offset: 1000
     // delay: 2
@@ -130,7 +143,7 @@ let controller = new ScrollMagic.Controller();
     });
 
   let trigger4Scene = new ScrollMagic.Scene({
-    trigerElement: ".trigger-4",
+    triggerElement: ".trigger-4",
     offset: 1600,
     duration: 0,
     triggerHook: 0.7

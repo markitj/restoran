@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
-    // const loadingScreen = document.querySelector(".loader");
-
     const sideNav = document.querySelector(".main-nav--side-nav");
     const btns = document.querySelectorAll(".button");
-    // loadingScreen.classList.add("finish-loading");
     document.querySelector("body").style.overflow = "auto";
 
     btns.forEach(btn => {
@@ -120,7 +117,7 @@ let controller = new ScrollMagic.Controller();
   let trigger3Scene = new ScrollMagic.Scene({
     triggerElement: section,
     duration: 700,
-    offset: 1000
+    offset: 10
     // delay: 2
   })
     .setTween(trigger3Tl)
@@ -144,7 +141,7 @@ let controller = new ScrollMagic.Controller();
 
   let trigger4Scene = new ScrollMagic.Scene({
     triggerElement: ".trigger-4",
-    offset: 1600,
+    offset: 10,
     duration: 0,
     triggerHook: 0.7
   })

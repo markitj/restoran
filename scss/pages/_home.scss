@@ -22,6 +22,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 6px;
+  padding-top: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -37,5 +38,11 @@
 
   .hero {
     height: 75vh;
+  }
+}
+
+@media (max-width: 735px) {
+  .gallery {
+    display: none;
   }
 }

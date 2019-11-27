@@ -596,7 +596,6 @@ section {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -604,5 +603,5 @@ body {
   color: #252525;
   width: 100%;
   height: 100vh;
-  overflow: hidden !important;
+  overflow: hidden;
 }

@@ -146,6 +146,6 @@ let controller = new ScrollMagic.Controller();
     triggerHook: 0.7
   })
     .setTween(trigger4Tl)
-    // .addIndicators({ name: "trigger-4" })
+    .addIndicators({ name: "trigger-4" })
     .addTo(controller);
 });
